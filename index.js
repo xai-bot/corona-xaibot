@@ -74,7 +74,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 
     function country_mapper(country) {
         console.log(country);
-        if (country in accepted_countries) {
+        if (accepted_countries.includes(country)) {
             return country;
         }
         else {
@@ -124,6 +124,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     function telling_geo(agent) {
         let country = parameters['geo-country'];
         let country_proccessed = country_mapper(country);
+        console.log(`country_processed: ${country_proccessed}`);
         let params = format_params(get_var_value(agent, 'age'), get_var_value(agent, 'gender_value'), country_proccessed);
         set_var_value(agent, 'country_value', country_proccessed);
         return predict(agent, params);
@@ -156,7 +157,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 
     function survival_message(probability) {
         let probability_percentage = probability * 100;
-        return `Your chance of recovery is ${probability_percentage.toFixed(2)}%`;
+        return `Your death risk is ${probability_percentage.toFixed(2)}%`;
     }
 
     function explain_feature(agent) {
@@ -225,14 +226,106 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     }
 
     function welcome(agent) {
-        agent.add(`Hey! I'm CoronaBot. Check out what would be your chances to survive 
-				the disease after being diagnosed with COVID19.`);
+        agent.add(`Hey! I'm CoronaBot. Check out what would be your death risk 
+				after being diagnosed with COVID19.`);
         agent.add(`I'm ready to explain the reasons for your prediction!`);
     }
 
     function survival_prediction(agent) {
         return predict(agent, get_var_value(agent, 'age'), get_var_value(agent, 'gender'), get_var_value(agent, 'country'));
     }
+
+    function formatted_parameters() {
+        let params_str = ``;
+        let params_dict = new Map();
+        all_variables.forEach(variable => params_dict[get_var_key(variable)] = get_var_value(agent, get_var_key(variable)));
+
+        for (var key in params_dict) {
+            params_str += get_var_name(key) + `=` + params_dict[key] + `&`;
+        }
+        console.log(params_str);
+        return params_str;
+    }
+
+    function break_down(agent) {
+        let params = formatted_parameters();
+        let imageUrl = `${server_address}/break_down?${params}`;
+        console.log(imageUrl);
+
+        agent.add(`Creating a plot. It may take a few seconds...`);
+        agent.add(new Card({
+                title: `Break down plot`,
+                imageUrl: imageUrl,
+                text: `This chart illustrates the contribution of variables to the final prediction`,
+                buttonText: `See larger plot`,
+                buttonUrl: imageUrl
+            })
+        );
+
+    }
+
+    function ceteris_paribus(agent) {
+        let variable = parameters.variable;
+        let country = parameters['geo-country'];
+        let gender = parameters.gender;
+        if (variable && variable.length > 0) {
+            variable = variable[0];
+        }
+        else if (country && country.length > 0) {
+            variable = 'country';
+        }
+        else if (gender && gender.length > 0) {
+            variable = 'gender';
+        }
+        else
+        {
+            variable = 'age';
+        }
+
+        let params = formatted_parameters();
+        let imageUrl = `${server_address}/ceteris_paribus?${params}variable=${variable}`;
+        console.log(imageUrl);
+
+        agent.add(`Creating a plot. It may take a few seconds...`);
+        agent.add(new Card({
+                title: `Ceteris Paribus plot`,
+                imageUrl: imageUrl,
+                //text: `This plot illustrates how the prediction changes when ${variable} is changed and everything else is fixed`,
+                buttonText: `See larger plot`,
+                buttonUrl: imageUrl
+            })
+        );
+    }
+
+    function formatted_params_dict(new_params_dict) {
+        let params_str = ``;
+        let params_dict = new Map();
+        all_variables.forEach(variable => params_dict[get_var_key(variable)] = get_var_value(agent, get_var_key(variable)));
+        Object.keys(new_params_dict).forEach(variable => params_dict[variable] = new_params_dict[variable]);
+
+        for (var key in params_dict) {
+            params_str += get_var_name(key) + `=` + params_dict[key] + `&`;
+        }
+        console.log(params_str);
+        return params_str;
+
+    }
+
+    function multi_slot_filling(agent) {
+        let age_val = parameters.number;
+        let params_dict = {};
+        if (age_val) { params_dict['age'] = age_val; }
+        let gender_val = parameters.gender;
+        if (gender_val && gender_val !== "") { params_dict['gender_value'] = gender_val; }
+        let country_val = parameters['geo-country'];
+        if (country_val && country_val !== "") { params_dict['country_value'] = country_val; }
+        console.log(params_dict);
+        console.log(JSON.stringify(params_dict));
+        set_multiple_var(agent, params_dict);
+        let params = formatted_params_dict(params_dict);
+        return predict(agent, params);
+    }
+
 
     let intentMap = new Map();
 
@@ -254,8 +347,11 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     intentMap.set('telling_age', telling_age);
     intentMap.set('telling_gender', telling_gender);
     intentMap.set('telling_geo', telling_geo);
+    intentMap.set('multi_slot_filling', multi_slot_filling);
 
     // xai
+    intentMap.set('ceteris_paribus', ceteris_paribus);
+    intentMap.set('break_down', break_down);
 
     agent.handleRequest(intentMap);
 });
