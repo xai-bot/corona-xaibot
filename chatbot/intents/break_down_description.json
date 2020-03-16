@@ -1,0 +1,33 @@
+{
+  "id": "f8a75681-269d-4830-8ebb-8466ab17a8b4",
+  "name": "break_down_description",
+  "auto": true,
+  "contexts": [
+    "break_down_plot"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "See the description of the iBreakDown method and package here: https://modeloriented.github.io/iBreakDown/"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

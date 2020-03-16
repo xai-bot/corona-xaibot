@@ -1,0 +1,276 @@
+[
+  {
+    "id": "692a77a8-fbbe-46f4-a2b2-28a538b1b007",
+    "data": [
+      {
+        "text": "What are possible ",
+        "userDefined": false
+      },
+      {
+        "text": "countries",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6391d9f9-240a-4da7-ae85-57f13f9bb56f",
+    "data": [
+      {
+        "text": "countries",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7955813c-dfb7-4ae1-8abb-2c44b2ca6d55",
+    "data": [
+      {
+        "text": "country",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "60deef45-3269-4d49-80b9-6fa880fa4516",
+    "data": [
+      {
+        "text": "age",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      },
+      {
+        "text": " range",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4e13a42f-db1e-4386-853c-447ff76d1172",
+    "data": [
+      {
+        "text": "age",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      },
+      {
+        "text": " valid range",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "775aa419-2d2f-465b-b2bd-1f608b35c741",
+    "data": [
+      {
+        "text": "Describe ",
+        "userDefined": false
+      },
+      {
+        "text": "age",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c071efe8-eca0-4c80-a328-937ed746f472",
+    "data": [
+      {
+        "text": "what are the possible values of ",
+        "userDefined": false
+      },
+      {
+        "text": "age",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "84af8837-a9b7-412f-b233-7ee099539f02",
+    "data": [
+      {
+        "text": "What are the possible values of a ",
+        "userDefined": false
+      },
+      {
+        "text": "gender",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "edfd9e82-2a21-48e5-96d8-5d15388f2616",
+    "data": [
+      {
+        "text": "What is the meaning of a feature ",
+        "userDefined": false
+      },
+      {
+        "text": "Sex",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0cb3f008-ce59-4c2a-b0bd-e7220c3c948c",
+    "data": [
+      {
+        "text": "age",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "966a56a5-d4db-46dc-af75-2bb491feed9b",
+    "data": [
+      {
+        "text": "What are the possibilities for ",
+        "userDefined": false
+      },
+      {
+        "text": "gender",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "432dd306-7bb9-4bec-a424-476c6c6f3bcb",
+    "data": [
+      {
+        "text": "Explain what is ",
+        "userDefined": false
+      },
+      {
+        "text": "gender",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "467c4e6e-12fa-4981-bf60-708bcb9a35f6",
+    "data": [
+      {
+        "text": "what ",
+        "userDefined": false
+      },
+      {
+        "text": "age",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      },
+      {
+        "text": " means here?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f5ce592c-8498-4d36-a2a7-7c9f222e15d3",
+    "data": [
+      {
+        "text": "What does the variable ",
+        "userDefined": false
+      },
+      {
+        "text": "gender",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      },
+      {
+        "text": " means?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9681cc39-14d7-4c1a-89d0-93774831087f",
+    "data": [
+      {
+        "text": "gender",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

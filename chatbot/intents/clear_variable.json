@@ -1,0 +1,50 @@
+{
+  "id": "c0bc2419-86ce-4b13-9da6-550811a5fe69",
+  "name": "clear_variable",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "371b4a0f-c010-4e26-80b5-9ba9054b5474",
+          "required": true,
+          "dataType": "@variable",
+          "name": "variable",
+          "value": "$variable",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Which variable you want to reset?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

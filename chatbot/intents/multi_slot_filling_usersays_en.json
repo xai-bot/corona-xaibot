@@ -1,0 +1,922 @@
+[
+  {
+    "id": "464c8632-114f-4bfd-a56a-1ef3f6f9f384",
+    "data": [
+      {
+        "text": "I\u0027m from ",
+        "userDefined": false
+      },
+      {
+        "text": "US",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": false
+      },
+      {
+        "text": " and I\u0027m ",
+        "userDefined": false
+      },
+      {
+        "text": "45",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " year-old ",
+        "userDefined": false
+      },
+      {
+        "text": "woman",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d2565452-323b-4821-ba4c-a8e529db47ed",
+    "data": [
+      {
+        "text": "United States",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "65",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " yo ",
+        "userDefined": false
+      },
+      {
+        "text": "man",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f8f89ea7-6935-430f-b6d2-98edbd76aa4c",
+    "data": [
+      {
+        "text": "UK",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "25",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b39fe6e2-8e42-4740-a122-738704284893",
+    "data": [
+      {
+        "text": "Russia",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "female",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4a17a48d-aaad-4b84-9c8b-705792d76b88",
+    "data": [
+      {
+        "text": "Poland",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "25",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "man",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a92b9229-63ab-4886-87dc-ab4f82e1a2ab",
+    "data": [
+      {
+        "text": "country\u003d",
+        "userDefined": false
+      },
+      {
+        "text": "Iran",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": false
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "male",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bb670632-9da2-4a06-82fa-a515a51302e1",
+    "data": [
+      {
+        "text": "gender",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      },
+      {
+        "text": ":",
+        "userDefined": false
+      },
+      {
+        "text": "male",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "age",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      },
+      {
+        "text": ":",
+        "userDefined": false
+      },
+      {
+        "text": "26",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "96ef45e7-74cf-4490-900b-81dacefea9d6",
+    "data": [
+      {
+        "text": "Woman",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "20",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " years",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f708f54a-bf98-4b4b-8bf3-7f1ff2b70d05",
+    "data": [
+      {
+        "text": "20",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "male",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f8045518-e134-4ae2-b471-3dcd7f488dee",
+    "data": [
+      {
+        "text": "I\u0027m ",
+        "userDefined": false
+      },
+      {
+        "text": "90",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": "-year old from ",
+        "userDefined": false
+      },
+      {
+        "text": "China",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2516b4af-4938-4105-b891-d26e1e21f5bb",
+    "data": [
+      {
+        "text": "Spain",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": false
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "man",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e4afa25b-d785-4377-9790-846f46d35460",
+    "data": [
+      {
+        "text": "Spain",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": false
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "90",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " yo",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6434935d-9c83-4e72-b9b7-289f00b41410",
+    "data": [
+      {
+        "text": "23",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " year old from ",
+        "userDefined": false
+      },
+      {
+        "text": "Italy",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "73036916-515b-44c9-84f4-e24baf16afff",
+    "data": [
+      {
+        "text": "boy",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "5",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ee4042e9-ae57-4a54-ae35-6086898348c7",
+    "data": [
+      {
+        "text": "man",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "China",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d45bd06c-aacf-4d13-a242-09459acacac0",
+    "data": [
+      {
+        "text": "10",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " year old ",
+        "userDefined": false
+      },
+      {
+        "text": "boy",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4948e54a-51ac-4bec-8204-150d2a726583",
+    "data": [
+      {
+        "text": "man",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "30",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f5f59322-25a5-411d-b83c-537f1887ab79",
+    "data": [
+      {
+        "text": "age",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      },
+      {
+        "text": "\u003d",
+        "userDefined": false
+      },
+      {
+        "text": "88",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "gender",
+        "alias": "variable1",
+        "meta": "@variable",
+        "userDefined": false
+      },
+      {
+        "text": "\u003d",
+        "userDefined": false
+      },
+      {
+        "text": "female",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d15f82dc-70ab-40a5-9ce6-4095ffd102f2",
+    "data": [
+      {
+        "text": "62",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " yo ",
+        "userDefined": false
+      },
+      {
+        "text": "man",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7e00c297-392a-4277-8929-38bfbbe135fd",
+    "data": [
+      {
+        "text": "male",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "45",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "14345145-2f1d-47c3-8ebd-1667dfd8f081",
+    "data": [
+      {
+        "text": "Female",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "55",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "303f94bd-a3ab-43db-93dc-13ad1be2996c",
+    "data": [
+      {
+        "text": "Age",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      },
+      {
+        "text": ": ",
+        "userDefined": false
+      },
+      {
+        "text": "22",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "gender",
+        "alias": "variable1",
+        "meta": "@variable",
+        "userDefined": false
+      },
+      {
+        "text": ": ",
+        "userDefined": false
+      },
+      {
+        "text": "Female",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b7b324f5-2a9b-48c4-8c10-60c3b54b5157",
+    "data": [
+      {
+        "text": "ok, so I\u0027m a ",
+        "userDefined": false
+      },
+      {
+        "text": "24",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " year-old ",
+        "userDefined": false
+      },
+      {
+        "text": "man",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "797ec668-1ba3-480f-948a-544bb954eeec",
+    "data": [
+      {
+        "text": "i\u0027m a ",
+        "userDefined": false
+      },
+      {
+        "text": "girl",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "19",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6b8de568-fd68-4333-b7ee-3cfe7a7b5cd9",
+    "data": [
+      {
+        "text": "i am ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " years old and i am a ",
+        "userDefined": false
+      },
+      {
+        "text": "woman",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4253453a-5e98-480f-aa45-ff067c3c06ca",
+    "data": [
+      {
+        "text": "I am ",
+        "userDefined": false
+      },
+      {
+        "text": "woman",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "23",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " yo",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4ee90214-9ae7-41b0-a3dd-46206186b79a",
+    "data": [
+      {
+        "text": "I am ",
+        "userDefined": false
+      },
+      {
+        "text": "25",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "male",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b2635cf1-9bde-4ed7-b367-19d642bc5e56",
+    "data": [
+      {
+        "text": "death likelihood of ",
+        "userDefined": false
+      },
+      {
+        "text": "100",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " year old ",
+        "userDefined": false
+      },
+      {
+        "text": "man",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "China",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "556bcc0d-6a57-4b47-8bf5-1f7751fee254",
+    "data": [
+      {
+        "text": "what is the death risk for ",
+        "userDefined": false
+      },
+      {
+        "text": "55",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " year old ",
+        "userDefined": false
+      },
+      {
+        "text": "woman",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fb359ae9-d9d3-4572-9488-07d8fcd63bec",
+    "data": [
+      {
+        "text": "what are the chances of survival for ",
+        "userDefined": false
+      },
+      {
+        "text": "25",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " year old ",
+        "userDefined": false
+      },
+      {
+        "text": "man",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "908ab454-650a-445a-b152-96ff018180ea",
+    "data": [
+      {
+        "text": "gender",
+        "alias": "variable",
+        "meta": "@variable",
+        "userDefined": false
+      },
+      {
+        "text": " is ",
+        "userDefined": false
+      },
+      {
+        "text": "man",
+        "alias": "gender",
+        "meta": "@gender",
+        "userDefined": false
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "age",
+        "alias": "variable1",
+        "meta": "@variable",
+        "userDefined": false
+      },
+      {
+        "text": " is ",
+        "userDefined": false
+      },
+      {
+        "text": "20",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

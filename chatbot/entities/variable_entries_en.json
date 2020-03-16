@@ -1,0 +1,33 @@
+[
+  {
+    "value": "age",
+    "synonyms": [
+      "age",
+      "child",
+      "kid",
+      "older",
+      "teenage",
+      "younger"
+    ]
+  },
+  {
+    "value": "gender",
+    "synonyms": [
+      "gender",
+      "genders",
+      "sex",
+      "sexes"
+    ]
+  },
+  {
+    "value": "country",
+    "synonyms": [
+      "country",
+      "state",
+      "region",
+      "countries",
+      "regions",
+      "states"
+    ]
+  }
+]

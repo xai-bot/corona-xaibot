@@ -1,0 +1,86 @@
+[
+  {
+    "id": "f59d4f48-1492-4483-9a79-7a4963ac9af4",
+    "data": [
+      {
+        "text": "Am I going to die?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3b06c435-8f49-4e48-a7f1-6a40cf855acd",
+    "data": [
+      {
+        "text": "Am I going to survive?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bed1f399-ff65-4b5c-b62b-31d3da48c3d7",
+    "data": [
+      {
+        "text": "Will I die?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bf31891c-60b6-4e66-a952-dba458a81fd9",
+    "data": [
+      {
+        "text": "Will I survive?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "63174365-3bb0-404e-aee6-3a864a371314",
+    "data": [
+      {
+        "text": "What is my death likelihood?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5494d133-e524-4313-8d39-38662e9130a9",
+    "data": [
+      {
+        "text": "How likely am I to die?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f7d27780-dca2-4eb6-bd93-0435a42775bb",
+    "data": [
+      {
+        "text": "What is the chance of survival?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

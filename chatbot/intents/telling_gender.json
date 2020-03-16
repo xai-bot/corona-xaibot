@@ -1,0 +1,43 @@
+{
+  "id": "f3bc79ef-4e50-4881-b94e-b68c56180486",
+  "name": "telling_gender",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "0edbeddd-c02d-434c-b3c3-f0ef687e5547",
+          "required": true,
+          "dataType": "@gender",
+          "name": "gender",
+          "value": "$gender",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "So, what is your gender?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

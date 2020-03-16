@@ -1,0 +1,74 @@
+[
+  {
+    "id": "24d764d2-dde4-467c-9cdb-73d5d4a61088",
+    "data": [
+      {
+        "text": "I\u0027m in ",
+        "userDefined": false
+      },
+      {
+        "text": "South Korea",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0b015d0e-dea5-4141-90ef-2d9b8562c03d",
+    "data": [
+      {
+        "text": "I live in ",
+        "userDefined": false
+      },
+      {
+        "text": "Iran",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8012f65d-2fb4-4720-b151-bdda31fd80fd",
+    "data": [
+      {
+        "text": "I come from ",
+        "userDefined": false
+      },
+      {
+        "text": "Singapore",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e247cf3f-3ec2-4461-b87a-cbf4e6b8f00f",
+    "data": [
+      {
+        "text": "I\u0027m from ",
+        "userDefined": false
+      },
+      {
+        "text": "China",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

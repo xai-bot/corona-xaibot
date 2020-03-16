@@ -1,0 +1,283 @@
+[
+  {
+    "id": "ed9ab66e-2cd2-4170-ae51-047b777ce68c",
+    "data": [
+      {
+        "text": "Great",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "662f9c6e-0476-4d6a-a475-80adb2dea2f2",
+    "data": [
+      {
+        "text": "You are not that stupid as I thought at ",
+        "userDefined": false
+      },
+      {
+        "text": "first",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9c2c5310-7a88-44a4-bee5-0cde63fbedef",
+    "data": [
+      {
+        "text": "Thanks",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "eb0579e5-2a28-4631-8b2a-b624eda02c4e",
+    "data": [
+      {
+        "text": "Nice!",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "46a1af71-9575-413a-9879-5943a1e0591e",
+    "data": [
+      {
+        "text": "You\u0027re fantastic",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "33c1fd69-15e2-4184-a590-7616a45bd768",
+    "data": [
+      {
+        "text": "Wonderful chatbot",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "a9f9d48f-7995-432f-82d9-d87ee9c7343f",
+    "data": [
+      {
+        "text": "It\u0027s quite funny",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "809b4668-e809-4226-9944-9be315c1770a",
+    "data": [
+      {
+        "text": "Wow!",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b5c09107-3038-4dd1-a0ff-d7a4602307c0",
+    "data": [
+      {
+        "text": "You are very smart",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7d56b316-b0b5-428e-be62-6927444c1419",
+    "data": [
+      {
+        "text": "This chatbot works gorgeous",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "41298a0d-3fe6-4b31-bfbc-4401e5e74c5d",
+    "data": [
+      {
+        "text": "Excellent!",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d6447867-5106-4cab-ae35-98192b292fd6",
+    "data": [
+      {
+        "text": "wow",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "01c3babc-bc4c-4062-a60f-06846707fb47",
+    "data": [
+      {
+        "text": "I love you",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3d2506c8-f62c-4aa0-8c4a-f9333afafe2c",
+    "data": [
+      {
+        "text": "Wonderful bot!",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5d667b43-257f-4309-bbaf-f5ce32dbe4fa",
+    "data": [
+      {
+        "text": "I enjoy chatting with you",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "affaf462-094e-45d1-b41c-3b7410e51038",
+    "data": [
+      {
+        "text": "Good bot",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "812dd01a-c7ac-4f64-aabc-5abcf2d5ea0e",
+    "data": [
+      {
+        "text": "You\u0027re a clever bot",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4816747d-0e98-4061-9fe7-83f4771349ab",
+    "data": [
+      {
+        "text": "I like talking to you",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "494a7973-45c7-482a-8938-e25c7a47c3b3",
+    "data": [
+      {
+        "text": "Thank you so much!",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d8d882fc-9c46-4014-a2c6-d05206cd8601",
+    "data": [
+      {
+        "text": "I like you",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "82dffeb9-b73a-48f6-8ab5-51c9ba46aa3e",
+    "data": [
+      {
+        "text": "You are great!",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "46e66add-475c-41db-ae30-c9dcb98aa309",
+    "data": [
+      {
+        "text": "You are very nice",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "35082b94-608a-4922-bd5c-d563463e9bc3",
+    "data": [
+      {
+        "text": "I see you are great!",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

@@ -2,10 +2,10 @@
 // for Dialogflow fulfillment library docs, samples, and to report issues
 'use strict';
 
-const functions = require('firebase-functions');
+const functions = require('firebase-functions/lib/index');
 const {WebhookClient} = require('dialogflow-fulfillment');
 const {Card, Suggestion, Image, Payload} = require('dialogflow-fulfillment');
-const { Carousel } = require('actions-on-google');
+const { Carousel } = require('actions-on-google/dist/index');
 const storage_context = 'storage_context';
 const all_variables = ['age', 'gender', 'country'];
 const http = require('http');

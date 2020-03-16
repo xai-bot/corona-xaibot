@@ -1,0 +1,35 @@
+{
+  "id": "72f061d3-c1c5-4d09-a85b-849ab7a94827",
+  "name": "problem_setting",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic",
+            "Well, you must have heard about coronavirus: https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic",
+            "I\u0027m sure you\u0027ve heard about COVID19 pandemic. Read more details here: https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,104 @@
+{
+  "id": "62b7beb5-b04e-4c5a-89fd-5c776796e2e3",
+  "name": "ceteris_paribus",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "71c54e8b-4221-4ecd-b4f9-1d554b22a8e9",
+          "required": false,
+          "dataType": "@variable",
+          "name": "variable",
+          "value": "$variable",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        },
+        {
+          "id": "8fa6c2a6-cd8f-4403-b262-0d045d94c2d5",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        },
+        {
+          "id": "0912138c-4168-435c-9daa-a5bbd231209c",
+          "required": false,
+          "dataType": "@sys.age",
+          "name": "age",
+          "value": "$age",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "72b15db2-8018-475f-983e-6a9c13d4a33f",
+          "required": false,
+          "dataType": "@variable",
+          "name": "variable1",
+          "value": "$variable1",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        },
+        {
+          "id": "3602f41e-5a8f-49db-89bb-3058cf626ee7",
+          "required": false,
+          "dataType": "@sys.geo-country",
+          "name": "geo-country",
+          "value": "$geo-country",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        },
+        {
+          "id": "d75d228e-eb9c-48a1-a71e-a0c2bc6ac5a0",
+          "required": false,
+          "dataType": "@gender",
+          "name": "gender",
+          "value": "$gender",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

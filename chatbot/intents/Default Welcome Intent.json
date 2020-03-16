@@ -1,0 +1,34 @@
+{
+  "id": "3a11ea90-3f10-4173-af08-3c83d461df6d",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 14,
+          "platform": "telephony",
+          "lang": "en",
+          "condition": "",
+          "text": "It\u0027s a chatbot - you might\u0027ve mistaken the number",
+          "ssml": ""
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
