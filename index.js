@@ -107,16 +107,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         all_variables.forEach(variable => agent.add(new Suggestion(variable)));
     }
 
-    function country_mapper(country) {
-        console.log(country);
-        if (accepted_countries.includes(country)) {
-            return country;
-        }
-        else {
-            return 'X';
-        }
-    }
-
     function clear_variable(agent) {
         let variable = parameters.variable;
         set_var_value(agent, get_var_key(variable), 'X');
@@ -157,11 +147,15 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 
     // specifying variable values
     function telling_geo(agent) {
-        let country = parameters['geo-country'];
-        let country_proccessed = country_mapper(country);
-        console.log(`country_processed: ${country_proccessed}`);
-        let params = format_params(get_var_value(agent, 'age'), get_var_value(agent, 'gender_value'), country_proccessed);
-        set_var_value(agent, 'country_value', country_proccessed);
+        let country_val = parameters['geo-country'];
+
+        if (!accepted_countries.includes(country_val)) {
+            agent.add(`We don't have data for ${country_val}. It is treated as 'other'. To see a list of accepted countries click:`)
+            agent.add(new Suggestion('countries'));
+        }
+
+        let params = format_params(get_var_value(agent, 'age'), get_var_value(agent, 'gender_value'), country_val);
+        set_var_value(agent, 'country_value', country_val);
         return predict(agent, params);
     }
 
@@ -192,22 +186,22 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     function survival_message(probability) {
         let probability_percentage = probability * 100;
         if (probability_percentage <= 0.01) {
-            return `Your death risk is minimal - ${probability_percentage.toFixed(2)}%. `;
+            return `Your death risk is minimal. It's ${probability_percentage.toFixed(2)}%. `;
         }
         else if (probability_percentage <= 0.1) {
-            return `Your death risk is very low - ${probability_percentage.toFixed(2)}%. It is compared to a seasonal flu`;
+            return `Your death risk is very low. It's ${probability_percentage.toFixed(2)}%. It is compared to a seasonal flu`;
         }
         else if (probability_percentage < 1.5) {
-            return `Your death risk is low - ${probability_percentage.toFixed(2)}%`;
+            return `Your death risk is low. It's ${probability_percentage.toFixed(2)}%`;
         }
         else if (probability_percentage < 5) {
-            return `Your death risk is average - ${probability_percentage.toFixed(2)}%. It is closed to overall mortality rate.`;
+            return `Your death risk is average. It's ${probability_percentage.toFixed(2)}%. It is closed to overall mortality rate.`;
         }
         else if (probability_percentage > 15) {
-            return `Your death risk is high - ${probability_percentage.toFixed(2)}%. Take care!`;
+            return `Your death risk is high. It's ${probability_percentage.toFixed(2)}%. Take care!`;
         }
         else {
-            return `Oh no, you have very high mortality risk. It's - ${probability_percentage.toFixed(2)}%`;
+            return `Oh no, you have very high mortality risk. It's ${probability_percentage.toFixed(2)}%`;
         }
     }
 
@@ -223,7 +217,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
             case 'country':
                 agent.add('Country. List of accepted input:');
                 accepted_countries.forEach(country => agent.add(new Suggestion(country)));
-                agent.add(new Suggestion('other'));
+                agent.add('All other countries are considered jointly as a single group.');
                 break;
             default:
                 return `I don't know the variable ${variable}`;
@@ -291,8 +285,10 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         let params_str = ``;
         let params_dict = new Map();
         all_variables.forEach(variable => params_dict[get_var_key(variable)] = get_var_value(agent, get_var_key(variable)));
-
-        for (var key in params_dict) {
+        console.log(get_var_key('age'));
+        console.log(get_var_value(agent, 'age'));
+        for (let key in params_dict.keys()) {
+            console.log(key, params_dict);
             params_str += get_var_name(key) + `=` + params_dict[key] + `&`;
         }
         console.log(params_str);
@@ -370,6 +366,10 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         let gender_val = parameters.gender;
         if (gender_val && gender_val !== "") { params_dict['gender_value'] = gender_val; }
         let country_val = parameters['geo-country'];
+        if (country_val && !accepted_countries.includes(country_val)) {
+            agent.add(`We don't have data for ${country_val}. It is treated as 'other'. To see a list of accepted countries click:`)
+            agent.add(new Suggestion('countries'));
+        }
         if (country_val && country_val !== "") { params_dict['country_value'] = country_val; }
         console.log(params_dict);
         console.log(JSON.stringify(params_dict));
