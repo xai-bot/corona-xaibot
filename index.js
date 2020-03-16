@@ -21,15 +21,29 @@ const pretty_vars = {
 const accepted_countries = ['China'];
 
 function get_var_name(variable) { // we need this mapping to avoid conflicting with entity names
-    if (variable === "gender_value") return 'gender';
-    if (variable === "country_value") return 'country';
-    return variable;
+    switch (variable) {
+        case 'gender_value':
+            return 'gender';
+        case 'age_value':
+            return 'age';
+        case 'country_value':
+            return 'country';
+        default:
+            return variable;
+    }
 }
 
 function get_var_key(variable) { // we need this mapping to avoid conflicting with entity names
-    if (variable === "gender") return 'gender_value';
-    if (variable === "country") return 'country_value';
-    return variable;
+    switch(variable) {
+        case 'age':
+            return 'age_value';
+        case 'gender':
+            return 'gender_value';
+        case 'country':
+            return 'country_value';
+        default:
+            return variable;
+    }
 }
 
 Array.prototype.sample = function(){
@@ -171,14 +185,14 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 				Still, it might be interesting to see what the model does in such cases`);
         }
         let params = format_params(age_val, get_var_value(agent, 'gender_value'), get_var_value(agent, 'country_value'));
-        set_var_value(agent, 'age', age_val);
+        set_var_value(agent, 'age_value', age_val);
 
         return predict(agent, params);
     }
 
     function telling_gender(agent) {
         let gender_val = parameters.gender;
-        let params = format_params(get_var_value(agent, 'age'), gender_val, get_var_value(agent, 'country_value'));
+        let params = format_params(get_var_value(agent, 'age_value'), gender_val, get_var_value(agent, 'country_value'));
         set_var_value(agent, 'gender_value', gender_val);
         return predict(agent, params);
     }
@@ -286,8 +300,8 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         let params_dict = new Map();
         all_variables.forEach(variable => params_dict[get_var_key(variable)] = get_var_value(agent, get_var_key(variable)));
         console.log(get_var_key('age'));
-        console.log(get_var_value(agent, 'age'));
-        for (let key in params_dict.keys()) {
+        console.log(get_var_value(agent, 'age_value'));
+        for (let key in params_dict) {
             console.log(key, params_dict);
             params_str += get_var_name(key) + `=` + params_dict[key] + `&`;
         }
@@ -362,7 +376,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     function multi_slot_filling(agent) {
         let age_val = parameters.number;
         let params_dict = {};
-        if (age_val) { params_dict['age'] = age_val; }
+        if (age_val) { params_dict['age_value'] = age_val; }
         let gender_val = parameters.gender;
         if (gender_val && gender_val !== "") { params_dict['gender_value'] = gender_val; }
         let country_val = parameters['geo-country'];
