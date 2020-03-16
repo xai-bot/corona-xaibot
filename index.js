@@ -20,17 +20,22 @@ const pretty_vars = {
 
 const accepted_countries = ['China'];
 
-function get_var_name(variable) {
+function get_var_name(variable) { // we need this mapping to avoid conflicting with entity names
     if (variable === "gender_value") return 'gender';
     if (variable === "country_value") return 'country';
     return variable;
 }
 
-function get_var_key(variable) {
+function get_var_key(variable) { // we need this mapping to avoid conflicting with entity names
     if (variable === "gender") return 'gender_value';
     if (variable === "country") return 'country_value';
     return variable;
 }
+
+Array.prototype.sample = function(){
+    return this[Math.floor(Math.random()*this.length)];
+};
+
 
 process.env.DEBUG = 'dialogflow:debug'; // enables lib debugging statements
 
@@ -41,24 +46,54 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     console.log('Dialogflow Request body: ' + JSON.stringify(request.body));
 
     function fallback(agent) {
-        agent.add(`Sorry, I don't understand yet. But I'll learn from this conversation and improve in the future!`);
-        agent.add(`Click below if you need help`);
+        let help_msg = [
+            `Click below if you need help`,
+            'Click below for help',
+        ].sample();
+        let dont_understand_msg = [
+            `Sorry, I don't understand yet. But I'll learn from this conversation and improve in the future!`,
+            `I'm sorry, I don't get. Perhaps you can rephrase that?`,
+            `Sorry, there are lots of things I still don't understand but I'm constantly improving!`,
+        ].sample();
+        agent.add(dont_understand_msg);
+        agent.add(help_msg);
         agent.add(new Suggestion('help'));
     }
 
     function expressing_dissatisfaction(agent) {
-        agent.add(`I'm sorry, I try to do my best. I'll learn from this conversation and hopefully next time I'll be better!`);
-        agent.add(`Click below if you need help`);
+        let sorry_msg = [
+            `I'm sorry, I try to do my best. I'll learn from this conversation and hopefully next time I'll be better!`,
+            `I'm just a bot, but thanks to you I'll improve!`,
+            `There are many things I don't understand, but I'm constantly learning!`,
+            `I'm making mistakes, but I learn from them!`,
+        ].sample();
+        let help_msg = [
+            `Click below if you need help`,
+            'Click below for help',
+        ].sample();
+        agent.add(sorry_msg);
+        agent.add(help_msg);
         agent.add(new Suggestion('help'));
     }
 
     function restart(agent) {
         agent.setContext({'name': storage_context, 'lifespan': '0'});
-        agent.add(`Let's start from the beginning!`);
+        let restart_msg = [
+            'Let\'s start from the beginning!',
+            'Let\' start all over!',
+        ].sample();
+        agent.add(restart_msg);
     }
 
     function end_conversation(agent) {
-        agent.add('Bye :( Great talking to you! Come back later, as I will improve!');
+        let goodbye_msg = [
+            `Bye :( Great talking to you! Come back later, as I will improve!`,
+            `Bye! Hope we'll be both safe and sound!`,
+            `Bye! Hope we'll have another chat in the future. The situation is rapidly changing!`,
+            `Bye! Hope to see you return one day! I'm constantly learning and gathering new data!`,
+
+        ].sample();
+        agent.add(goodbye_msg);
         agent.setContext({'name': storage_context, 'lifespan': '0'});
     }
 
@@ -151,13 +186,29 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         let gender_val = parameters.gender;
         let params = format_params(get_var_value(agent, 'age'), gender_val, get_var_value(agent, 'country_value'));
         set_var_value(agent, 'gender_value', gender_val);
-
         return predict(agent, params);
     }
 
     function survival_message(probability) {
         let probability_percentage = probability * 100;
-        return `Your death risk is ${probability_percentage.toFixed(2)}%`;
+        if (probability_percentage <= 0.01) {
+            return `Your death risk is minimal - ${probability_percentage.toFixed(2)}%. `;
+        }
+        else if (probability_percentage <= 0.1) {
+            return `Your death risk is very low - ${probability_percentage.toFixed(2)}%. It is compared to a seasonal flu`;
+        }
+        else if (probability_percentage < 1.5) {
+            return `Your death risk is low - ${probability_percentage.toFixed(2)}%`;
+        }
+        else if (probability_percentage < 5) {
+            return `Your death risk is average - ${probability_percentage.toFixed(2)}%. It is closed to overall mortality rate.`;
+        }
+        else if (probability_percentage > 15) {
+            return `Your death risk is high - ${probability_percentage.toFixed(2)}%. Take care!`;
+        }
+        else {
+            return `Oh no, you have very high mortality risk. It's - ${probability_percentage.toFixed(2)}%`;
+        }
     }
 
     function explain_feature(agent) {
@@ -228,6 +279,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     function welcome(agent) {
         agent.add(`Hey! I'm CoronaBot. Check out what would be your death risk 
 				after being diagnosed with COVID19.`);
+        agent.add(new Image(`https://images.newscientist.com/wp-content/uploads/2020/01/27123401/f0070229-coronavirus_artwork-spl.jpg`));
         agent.add(`I'm ready to explain the reasons for your prediction!`);
     }
 
